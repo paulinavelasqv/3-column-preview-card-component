@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 830px;
+    height: 350px;
+}
+
+.column{
+    flex: 1;
+    width: 276px;
+    height: 350px;
+    padding: 2.5rem;
+}
+
+#one{
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#two{
+    background: hsl(184, 100%, 22%);
+}
+
+#three{
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.image{
+    width: 55px;
+    height: 35px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    margin-top: 1.5rem;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 3.5rem;
+}
+
+button{
+    border: none;
+    width: 130px;
+    padding: .7rem;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    background: hsl(0, 0%, 95%);
+}
+
+#one button{
+    color: hsl(31, 77%, 52%);
+}
+
+#two button{
+    color: hsl(184, 100%, 22%);
+}
+
+#three button{
+    color: hsl(179, 100%, 13%);
+}
+
+#one button:hover{
+    background: hsl(31, 77%, 52%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+#two button:hover{
+    background: hsl(184, 100%, 22%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+#three button:hover{
+    background: hsl(179, 100%, 13%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        align-items: center;
+    }
+    .main {
+      flex-direction: column;
+      margin-left: 1rem;
+    }
+    .column{
+        width: 100%;
+        height: 50%;
+    }
+}
